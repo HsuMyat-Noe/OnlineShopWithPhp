@@ -13,7 +13,7 @@
                 $res = mysqli_query($conn, $sql);
                 if($res){
                     while($row = mysqli_fetch_assoc($res)){
-                        $cid = $row['id'];
+                        $id = $row['id'];
                         $title = $row['title'];
                         $price = $row['price'];
                         $description = $row['description'];

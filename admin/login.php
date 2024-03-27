@@ -20,7 +20,7 @@
             ?>
             <div class="col-md-6 py-3 mx-auto my-3">
                 <div class="border p-3 rounded-3">
-                    <img src="../images/logo.png" alt="logo.png" class="w-25 rounded mx-auto d-block">
+                    <img src="../images/logo.jpg" alt="logo.png" class="w-25 rounded mx-auto d-block">
                     <form action="" method="POST">
                         <div class="mb-3">
                             <label for="userName" class="form-label">User Name</label>

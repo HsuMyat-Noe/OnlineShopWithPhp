@@ -1,6 +1,12 @@
 <?php include "widget/header.php" ?>
     <!-- Promotion Section -->
     <div class="container p-3">
+        <?php 
+            if(isset($_SESSION['noti'])){
+                echo $_SESSION['noti'];
+                unset($_SESSION['noti']);
+            } 
+        ?>
         <br><br>
         <h2 class="text-white text-center">Promotions</h2>
         <br><br>
@@ -21,7 +27,7 @@
                             <img src="images/promo1.png" class="d-block w-100 rounded-3" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="text-white">Promo 1</h5>
-                                <a href="order.html" class="btn btn-outline-primary w-40 text-decoration-none">Order
+                                <a href="order.php" class="btn btn-outline-primary w-40 text-decoration-none">Order
                                     Now</a>
                             </div>
                         </div>
@@ -113,7 +119,7 @@
                 $res = mysqli_query($conn, $sql);
                 if($res){
                     while($row = mysqli_fetch_assoc($res)){
-                        $cid = $row['id'];
+                        $id = $row['id'];
                         $title = $row['title'];
                         $price = $row['price'];
                         $description = $row['description'];

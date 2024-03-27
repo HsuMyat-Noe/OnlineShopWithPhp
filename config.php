@@ -2,7 +2,7 @@
     session_start(); // use for session
     ob_start(); // use for page navigation
     
-    define('SITEURL','http://localhost/LLP-Online-Shop/');
+    define('SITEURL','http://localhost/Online-Shop/');
     
     $server_name = "localhost";
     $username = "root";
