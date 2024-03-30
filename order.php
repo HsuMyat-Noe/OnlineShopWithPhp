@@ -128,7 +128,7 @@
                                     </div>';
                 header('location:' . SITEURL . 'index.php');
             }else{
-                $_SESSION['noti'] = '<div class="alert alert-success" role="alert">
+                $_SESSION['noti'] = '<div class="alert alert-danger" role="alert">
                                         Failed to order product!
                                     </div>';
                 header('location:' . SITEURL . 'index.php');

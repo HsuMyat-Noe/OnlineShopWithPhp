@@ -17,6 +17,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Product</th>
                 <th scope="col">Qty</th>
+                <th scope="col">Total $</th>
                 <th scope="col">Order Date</th>
                 <th scope="col">Status</th>
                 <th scope="col">Name</th>
@@ -39,6 +40,7 @@
                         $id = $row['id'];
                         $product_title = $row['product'];
                         $qty = $row['qty'];
+                        $total = $row['total'];
                         $order_date = $row['order_date'];
                         $status = $row['status'];
                         $customer_name = $row['customer_name'];
@@ -47,7 +49,7 @@
                         $customer_address = $row['customer_address'];
 
                         switch($status){
-                            case "Delievered" : $text_color = "text-success";
+                            case "Delivered" : $text_color = "text-success";
                             break;
                             case "Ordered" : $text_color = "text-primary";
                             break;
@@ -59,6 +61,7 @@
                 <th scope="row"><?= $id ?></th>
                 <td><?= $product_title ?></td>
                 <td><?= $qty ?></td>
+                <td><?= $total ?></td>
                 <td><?= $order_date ?></td>
                 <td class="<?= $text_color ?>"><?= $status ?></td>
                 <td><?= $customer_name ?></td>
@@ -81,5 +84,4 @@
     </table>
     </div>    
 </div>
-
 <?php include "widget/footer.php" ?>

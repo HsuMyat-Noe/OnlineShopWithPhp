@@ -63,9 +63,6 @@
            
         </tbody>
     </table>
-    </div>
-
-    
+    </div>   
 </div>
-
 <?php include "widget/footer.php" ?>

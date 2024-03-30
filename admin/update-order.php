@@ -36,7 +36,7 @@
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="status" id="s3" 
-                        <?php if($status == "Delivered") echo "checked" ?> value = "Delievered"
+                        <?php if($status == "Delivered") echo "checked" ?> value = "Delivered"
                     >
                     <label class="form-check-label" for="s3">
                         Delivered

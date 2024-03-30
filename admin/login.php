@@ -42,7 +42,7 @@
 
 <?php
    if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        $userName = $_POST['userName'];
+        $userName = htmlspecialchars($_POST['userName']);
         $pw = md5($_POST['password']);
         $sql = "select * from admins where userName='$userName' and password='$pw'";
 
@@ -57,13 +57,13 @@
                                     </div>';
                 header('location:' . SITEURL . 'admin/index.php');
             }else{
-                $_SESSION['noti'] = '<div class="alert alert-success" role="alert">
+                $_SESSION['noti'] = '<div class="alert alert-danger" role="alert">
                                         Failed to login!
                                     </div>';
                 header('location:' . SITEURL . 'admin/login.php');
             }
         }else{
-            $_SESSION['noti'] = '<div class="alert alert-success" role="alert">
+            $_SESSION['noti'] = '<div class="alert alert-danger" role="alert">
                                     Failed to login!
                                 </div>';
             header('location:' . SITEURL . 'admin/login.php');

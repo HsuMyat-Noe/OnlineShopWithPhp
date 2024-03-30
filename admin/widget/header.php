@@ -11,9 +11,7 @@
 ?>
 <!doctype html>
 <html lang="en">
-
 <head>
-
     <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
@@ -59,9 +57,7 @@
                     <li class="nav-item mx-3 fw-normal fs-5">
                         <a class="nav-link" href="logout.php">Logout</a>
                     </li>
-
                 </ul>
-
             </div>
         </div>
     </nav>
